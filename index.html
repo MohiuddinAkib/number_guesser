@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=   ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number guess</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="card-header-title">Number guesser</h1>
+            </div>
+            <div class="card-content">
+              <div class="content" id="game">
+                <!-- Subtitle -->
+                <p class="subtitle is-block">Guess a number between <span id="min-num"></span> and <span id="max-num"></span></p>
+                <!-- Form -->
+                <form id="game-form">
+                  <div class="field">
+                    <label for="guess-input" class="label">Enter your number</label>
+                    <div class="control">
+                      <input type="text" class="input" id="guess-input" placeholder="Enter your number">
+                    </div>
+                    <p class="help"></p>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <button id="guess-btn" class="button is-primary is-fullwidth" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
